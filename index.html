@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>邓沛雨 - 个人简历 / Deng Peiyu - CV</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@600&display=swap');
 
     body {
       font-family: 'Roboto', sans-serif;
@@ -14,7 +13,7 @@
       color: #2b2d42;
       margin: 0;
       padding: 0;
-      animation: fadeIn 1.2s ease-in;
+      animation: fadeIn 1s ease-in-out;
     }
 
     @keyframes fadeIn {
@@ -25,15 +24,15 @@
     header {
       background: linear-gradient(135deg, #6a11cb, #2575fc);
       color: #fff;
-      padding: 30px;
+      padding: 30px 20px;
       text-align: center;
       border-bottom-left-radius: 50px;
       border-bottom-right-radius: 50px;
-      animation: slideDown 1s ease;
+      animation: slideDown 0.8s ease-in-out;
     }
 
     @keyframes slideDown {
-      from { transform: translateY(-100px); opacity: 0; }
+      from { transform: translateY(-50px); opacity: 0; }
       to { transform: translateY(0); opacity: 1; }
     }
 
@@ -45,6 +44,7 @@
 
     .contact-info {
       font-size: 16px;
+      margin-top: 10px;
     }
 
     .contact-info a {
@@ -84,11 +84,11 @@
       padding: 40px;
       border-radius: 20px;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-      animation: fadeInUp 1s ease;
+      animation: fadeInUp 0.8s ease-in-out;
     }
 
     @keyframes fadeInUp {
-      from { transform: translateY(50px); opacity: 0; }
+      from { transform: translateY(30px); opacity: 0; }
       to { transform: translateY(0); opacity: 1; }
     }
 
@@ -98,6 +98,11 @@
       padding-bottom: 8px;
       color: #1a237e;
       margin-top: 35px;
+      transition: color 0.3s ease;
+    }
+
+    h2:hover {
+      color: #6a11cb;
     }
 
     ul {
@@ -135,23 +140,6 @@
       background-color: #3b82f6;
       transform: scale(1.05);
     }
-
-    .download-btn {
-      display: block;
-      width: fit-content;
-      margin: 20px auto;
-      padding: 10px 20px;
-      background-color: #ff9800;
-      color: #fff;
-      font-weight: bold;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-
-    .download-btn:hover {
-      background-color: #f57c00;
-    }
   </style>
 </head>
 <body>
@@ -186,8 +174,6 @@
       <li><strong>留学领域自媒体运营</strong> | 2024年8月 - 至今<br>小红书粉丝5000+，抖音单条视频播放超1000万，累计点赞100万+。</li>
       <li><strong>美瞳微商电商运营</strong> | 2020年2月 - 至今<br>降低采购成本35%，建立代理50+，毛利率达45%。</li>
     </ul>
-
-    <a href="resume-cn.pdf" class="download-btn" download>下载中文版简历</a>
   </div>
 
   <div class="container" id="english-section" style="display:none;">
@@ -211,8 +197,6 @@
       <li><strong>Self-Media IP Operation</strong> | Aug 2024 – Present<br>Achieved 20M+ views; 1M+ likes; increased search traffic by 120% through viral content series.</li>
       <li><strong>Personal E-commerce Store (Contact Lenses)</strong> | Feb 2020 – Present<br>Reduced procurement costs by 35%; recruited 50+ agents; maintained 45% gross margin.</li>
     </ul>
-
-    <a href="resume-en.pdf" class="download-btn" download>Download English Resume</a>
   </div>
 
   <div class="language-switch">
