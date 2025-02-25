@@ -3,155 +3,221 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>邓沛雨 - 个人简历</title>
+  <title>邓沛雨 - 个人简历 / Deng Peiyu - CV</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
     body {
-      font-family: Arial, sans-serif;
-      color: #333;
-      background-color: #f4f4f4;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f9fb;
+      color: #2b2d42;
       margin: 0;
       padding: 0;
+      animation: fadeIn 1.2s ease-in;
     }
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      background-color: #fff;
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: #fff;
       padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      animation: slideDown 1s ease;
     }
-    h1, h2, h3 {
-      color: #222;
+
+    @keyframes slideDown {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 34px;
       margin-bottom: 10px;
     }
-    h1 {
-      font-size: 32px;
-      font-weight: bold;
+
+    .contact-info {
+      font-size: 16px;
     }
+
+    .contact-info a {
+      color: #fdd835;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .contact-info a:hover {
+      color: #ffeb3b;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin: 20px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #2575fc;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #6a11cb;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 30px auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1s ease;
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
     h2 {
       font-size: 24px;
       border-bottom: 2px solid #e0e0e0;
-      padding-bottom: 4px;
-      margin-top: 30px;
+      padding-bottom: 8px;
+      color: #1a237e;
+      margin-top: 35px;
     }
-    h3 {
-      font-size: 20px;
-    }
-    .contact-info {
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-    .section {
-      margin-top: 20px;
-    }
-    .section ul {
+
+    ul {
       padding-left: 20px;
     }
-    .section li {
-      margin-bottom: 8px;
+
+    li {
+      margin-bottom: 10px;
       line-height: 1.6;
     }
-    .education, .experience, .projects, .skills, .summary {
-      margin-bottom: 30px;
+
+    .language-switch {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
     }
-    .job-title {
+
+    .language-switch button {
+      padding: 12px 24px;
+      margin: 0 10px;
+      border: none;
+      border-radius: 25px;
+      background-color: #2575fc;
+      color: #fff;
       font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
     }
-    .date {
-      float: right;
-      font-size: 14px;
-      color: #777;
+
+    .language-switch button.active {
+      background-color: #6a11cb;
     }
-    .clearfix::after {
-      content: "";
-      display: table;
-      clear: both;
+
+    .language-switch button:hover {
+      background-color: #3b82f6;
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>邓沛雨</h1>
-    <div class="contact-info">
-      📞 13507912171 ｜ 📧 2227456287@qq.com ｜ 应届生｜可随时到岗
-    </div>
+  <header>
+    <h1>邓沛雨 - 个人简历 / Deng Peiyu - CV</h1>
+    <div class="contact-info">📞 +86 13507912171 ｜ 📧 <a href="mailto:2227456287@qq.com">2227456287@qq.com</a> ｜ 应届生 | Available Immediately</div>
+  </header>
 
-    <div class="summary">
-      <h2>自我评价</h2>
-      <p>内容运营 & 电商营销双经验：具备跨境电商的数据化运营能力及社媒KOL投放经验，能够从0-1搭建社交媒体营销方案。<br>
-      用户视角 & 成本意识：具备用户需求洞察力及ROI优化能力，擅长策划高转化内容。<br>
-      学习能力强 & 适应性高：熟悉海外电商与本地化营销，能快速适应品牌调性并推动业务增长。</p>
-    </div>
+  <nav>
+    <a href="#chinese" onclick="switchLanguage('chinese')">中文版</a>
+    <a href="#english" onclick="switchLanguage('english')">English Version</a>
+  </nav>
 
-    <div class="education">
-      <h2>教育经历</h2>
-      <div class="clearfix">
-        <span class="job-title">英国埃克塞特大学 - 硕士（对外英语教学）</span>
-        <span class="date">2023年09月 - 2024年11月</span>
-      </div>
-      <ul>
-        <li>主修课程：英语语言教学、技术与学习、语⾔教师发展。</li>
-      </ul>
-      <div class="clearfix">
-        <span class="job-title">广东理工学院 - 本科（商务英语）</span>
-      </div>
-      <ul>
-        <li>荣誉奖项：校一等奖学金、校三好学生、优秀毕业生。</li>
-      </ul>
-    </div>
+  <div class="container" id="chinese-section">
+    <h2>自我评价</h2>
+    <p>内容运营与电商营销双经验，具备跨境电商数据化运营能力及社媒KOL投放经验。能从0到1搭建社交媒体营销方案，具备用户视角与成本意识，策划高转化内容，适应不同品牌调性。</p>
 
-    <div class="experience">
-      <h2>实习经历</h2>
-      <div class="clearfix">
-        <span class="job-title">亚马逊运营助理 - 怎么会科技有限公司</span>
-        <span class="date">2023年02月 - 2023年06月</span>
-      </div>
-      <ul>
-        <li>深度分析灯具类产品市场趋势，成功上架100+新品，覆盖五大品类。</li>
-        <li>主导英国站灯具类目产品运营，制定选品策略并实现商品转化率提升12%。</li>
-        <li>推动5个店铺页面优化，提升用户留存和访问量。</li>
-        <li>每月实现店铺销售额5万，广告投放占比12%，单品月销达1500+。</li>
-      </ul>
-      <div class="clearfix">
-        <span class="job-title">媒介投放专员 - ULIS品牌</span>
-        <span class="date">2022年10月 - 2022年11月</span>
-      </div>
-      <ul>
-        <li>搭建300+小红书运动博主资源库，投产比提升至4.1。</li>
-        <li>策划线上话题挑战赛，话题曝光量增长12%。</li>
-        <li>与300+达人合作，降低拖稿率至15%。</li>
-      </ul>
-    </div>
+    <h2>教育经历</h2>
+    <ul>
+      <li><strong>英国埃克塞特大学</strong> - 硕士（TESOL） | 2023年9月 - 2024年11月<br>主修课程：英语语言教学、技术与学习、语言教师发展</li>
+      <li><strong>广东理工学院</strong> - 本科（商务英语） | 2019年9月 - 2023年6月<br>荣誉奖项：校一等奖学金、校三好学生、优秀毕业生</li>
+    </ul>
 
-    <div class="projects">
-      <h2>项目经历</h2>
-      <div class="clearfix">
-        <span class="job-title">自媒体IP运营（留学领域）</span>
-        <span class="date">2024年08月 - 至今</span>
-      </div>
-      <ul>
-        <li>小红书账号5个月内获赞藏评20w+，粉丝5000+；抖音单条视频播放量最高1000w+。</li>
-        <li>分析平台数据，累计播放量达2000万+，点赞100w+。</li>
-        <li>策划3大爆款内容系列，账号搜索量提升120%。</li>
-      </ul>
-      <div class="clearfix">
-        <span class="job-title">个⼈电商运营（美瞳微商）</span>
-        <span class="date">2020年02月 - 至今</span>
-      </div>
-      <ul>
-        <li>供应链整合降低采购成本35%，建立稳定供货渠道。</li>
-        <li>制定差异化定价策略，毛利率达45%。</li>
-        <li>招募代理50+，分销贡献占比超60%。</li>
-      </ul>
-    </div>
+    <h2>实习经历</h2>
+    <ul>
+      <li><strong>怎么会科技有限公司 / 亚马逊运营助理</strong> | 2023年2月 - 2023年6月<br>上架100+新品，提升转化率12%，实现月销售额5万元。</li>
+      <li><strong>ULIS品牌 / 媒介投放专员</strong> | 2022年10月 - 2022年11月<br>与300+博主合作，ROI提高至4.1，拖稿率下降至15%。</li>
+    </ul>
 
-    <div class="skills">
-      <h2>个人技能</h2>
-      <ul>
-        <li><strong>软件技能：</strong> Word、Excel、PowerPoint、剪映、秀米。</li>
-        <li><strong>语言能力：</strong> 雅思6分、英语四级/六级、专业英语四级、普通话二级甲等。</li>
-      </ul>
-    </div>
+    <h2>项目经历</h2>
+    <ul>
+      <li><strong>留学领域自媒体运营</strong> | 2024年8月 - 至今<br>小红书粉丝5000+，抖音单条视频播放超1000万，累计点赞100万+。</li>
+      <li><strong>美瞳微商电商运营</strong> | 2020年2月 - 至今<br>降低采购成本35%，建立代理50+，毛利率达45%。</li>
+    </ul>
+
+    <h2>个人技能</h2>
+    <ul>
+      <li><strong>软件技能：</strong> Word、Excel、PPT、剪映、秀米</li>
+      <li><strong>语言能力：</strong> 雅思6.0，英语可作为工作语言</li>
+    </ul>
   </div>
+
+  <div class="container" id="english-section" style="display:none;">
+    <h2>Summary</h2>
+    <p>Dual expertise in content marketing and e-commerce operations, with hands-on experience in cross-border e-commerce, social media strategy, and KOL collaboration. Proven ability to drive user growth, optimize ROI, and execute data-driven campaigns.</p>
+
+    <h2>Education</h2>
+    <ul>
+      <li><strong>University of Exeter</strong> - MA in TESOL | Sep 2023 – Nov 2024<br>Core Courses: English Language Teaching, Technology in Education, Teacher Development</li>
+      <li><strong>Guangdong Technology College</strong> - BA in Business English | Sep 2019 – Jun 2023<br>Honors: First-Class Scholarship, Outstanding Graduate</li>
+    </ul>
+
+    <h2>Professional Experience</h2>
+    <ul>
+      <li><strong>ZENMEHUI Technology Co., Ltd. / Amazon Operations Assistant</strong> | Feb 2023 – Jun 2023<br>Managed 100+ product listings; increased conversion rates by 12% and monthly sales to £5,000.</li>
+      <li><strong>ULIS (Yoga Apparel Brand) / Media Placement Specialist</strong> | Oct 2022 – Nov 2022<br>Collaborated with 300+ influencers; improved ROI from 1:2.3 to 1:4.1; reduced submission delays.</li>
+    </ul>
+
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Self-Media IP Operation</strong> | Aug 2024 – Present<br>Achieved 20M+ views; 1M+ likes; increased search traffic by 120% through viral content series.</li>
+      <li><strong>Personal E-commerce Store (Contact Lenses)</strong> | Feb 2020 – Present<br>Reduced procurement costs by 35%; recruited 50+ agents; maintained 45% gross margin.</li>
+    </ul>
+
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Tools:</strong> Amazon Seller Central, Google Analytics, Xiaohongshu Creator Platform</li>
+      <li><strong>Languages:</strong> IELTS 6.0, Fluent in English and Mandarin</li>
+    </ul>
+  </div>
+
+  <div class="language-switch">
+    <button onclick="switchLanguage('chinese')" id="btn-chinese" class="active">中文版</button>
+    <button onclick="switchLanguage('english')" id="btn-english">English Version</button>
+  </div>
+
+  <script>
+    function switchLanguage(lang) {
+      document.getElementById('chinese-section').style.display = lang === 'chinese' ? 'block' : 'none';
+      document.getElementById('english-section').style.display = lang === 'english' ? 'block' : 'none';
+      document.getElementById('btn-chinese').classList.toggle('active', lang === 'chinese');
+      document.getElementById('btn-english').classList.toggle('active', lang === 'english');
+    }
+  </script>
 </body>
 </html>
